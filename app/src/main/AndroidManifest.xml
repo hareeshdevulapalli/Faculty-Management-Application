@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.vardhaman.FacultyManagementSystem">
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name="in.vardhaman.FacultyManagementSystem.RegisterActivity"/>
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ExpensePackage.DisplayExpense"
+            android:label="Display Expenses" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ExpensePackage.InsertExpense"
+            android:label="Insert Expenses" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.HolidayPackage.ViewHoliday"
+            android:label="View Holiday" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ResearchProject.DisplayResearch"
+            android:label="Display Research" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ResearchProject.InsertResearch"
+            android:label="Insert Research" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ConsellingData.DisplayCounselling"
+            android:label="Display Counselling" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ConsellingData.InsertCounselling"
+            android:label="Insert Research" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ProjectPackage.InsertProject"
+            android:label="Insert Project" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.AssignmentPackage.DisplayAssignment"
+            android:label="Display Assignment" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.AssignmentPackage.InsertAssignmentActivity"
+            android:label="Insert Assignment" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.EvaluationPackage.DisplayEvaluation"
+            android:label="Display Evaluation" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.EvaluationPackage.InsertEvaluationActivity"
+            android:label="Insert Evaluation" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ClassTimeTablePackage.DisplayClassTimeTableActivity"
+            android:label="View TimeTable" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ClassTimeTablePackage.InsertClassTimeTableDetail"
+            android:label="Insert TimeTable" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.LabTimeTablePackage.InsertLabTimeTableDetail"
+            android:label="Insert Lab TimeTable" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.LabTimeTablePackage.DisplayLabTimeTableActivity"
+            android:label="View Lab TimeTable" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ExamTimeTablePackage.InsertExamTimeTable"
+            android:label="Insert Exam TimeTable" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ExamTimeTablePackage.DisplayExamActivity"
+            android:label="Display Exam" />
+        <activity
+            android:name="in.vardhaman.FacultyManagementSystem.ProjectPackage.DisplayProject"
+            android:label="Display Project" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="minor.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="in.insideandroid" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="in.vardhaman.FacultyManagementSystem.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="in.vardhaman.FacultyManagementSystem.MainActivity" />
+    </application>
+
+</manifest>
